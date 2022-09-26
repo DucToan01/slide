@@ -1,5 +1,5 @@
 window.onscroll = function () {
-  console.log(this.oldScroll > this.scrollY);
+  
   this.oldScroll = this.scrollY;
 }
 var video = document.querySelectorAll('video');
@@ -14,13 +14,13 @@ window.addEventListener('scroll', () => {
     video1.style.display = 'none';
     video2.style.display = 'block';
     video2.play(this);
-    console.log(oldValue, newValue);
+   
 
   } else if (oldValue > newValue) {
     video1.style.display = 'block';
     video2.style.display = 'none';
     video1.play(this);
-    console.log(oldValue, newValue);
+   
 
   }
 
