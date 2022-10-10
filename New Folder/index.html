@@ -13,12 +13,14 @@
            
             
         }
+        img,
         video{
-            width: 500px;
+            
             position: fixed;
           
         }
         
+        .img,
         .video2{
             display: none;
         }
@@ -28,15 +30,17 @@
 <body>
 
     <body>
-       <video class="video1" loop="true" autoplay="autoplay" muted style="width: 200px; ">
+        <div class="container">
+       <video class="video1" loop="true"  muted repeat style="width: 10%; ">
         <source src="video/video.webm">
        </video>
 
-        <video  class="video2" loop="true" autoplay="autoplay" muted repeat  style="width: 200px;">
+        <video  class="video2" loop="true"  muted repeat  style="width: 10%;">
             <source src="video/video1.webm">
         </video>
+        <img src="./video/giphy.gif" alt="" class="img" >
 
-
+    </div>
 
         <script src="./slide.js"></script>
     </body>
